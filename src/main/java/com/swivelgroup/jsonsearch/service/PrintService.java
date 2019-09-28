@@ -47,22 +47,25 @@ public class PrintService {
     }
 
     public void printAllSearchJsons(List<Map<String, String>> jsonList) {
-
-        jsonList.forEach(map -> {
-            SortedSet<String> keySet = new TreeSet<>(map.keySet());
-            Iterator<String> it = keySet.iterator();
-            while (it.hasNext()) {
-                String key = it.next();
-                System.out.println();
-                System.out.print(key);
-                for (int i = 0; i < 30 - key.length(); i++) {
-                    System.out.print(" ");
+        if (jsonList.size() > 0) {
+            jsonList.forEach(map -> {
+                SortedSet<String> keySet = new TreeSet<>(map.keySet());
+                Iterator<String> it = keySet.iterator();
+                while (it.hasNext()) {
+                    String key = it.next();
+                    System.out.println();
+                    System.out.print(key);
+                    for (int i = 0; i < 30 - key.length(); i++) {
+                        System.out.print(" ");
+                    }
+                    System.out.print(utillService.getFieldFromHashMap(map, key));
                 }
-                System.out.print(utillService.getFieldFromHashMap(map, key));
-            }
-            System.out.println();
-            System.out.println();
-        });
+                System.out.println();
+                System.out.println();
+            });
+        }else{
+            System.out.println("No results found");
+        }
     }
 
 }
