@@ -86,7 +86,7 @@ public class CommandLineApplication {
         String str = "";
         try {
             str = reader.readLine();
-            if(str.equals("quite")){
+            if(str.equals("quit")){
                 exit(0);
             }
             firstKey = Integer.parseInt(str);

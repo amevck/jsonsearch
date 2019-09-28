@@ -36,7 +36,7 @@ public class PrintService {
         System.out.println("Select search options: ");
         System.out.println(" * Press 1 to search: ");
         System.out.println(" * press 2 to view a list of searchable fields: ");
-        System.out.println(" * Type 'quite' to exit: ");
+        System.out.println(" * Type 'quit' to exit: ");
     }
 
     public void endPrinting() {
