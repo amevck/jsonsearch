@@ -9,19 +9,23 @@ build the projet and run the jar file inside the /build/libs
 
 ### Prerequisites
 
-Java installed in pc (higher than 8)
+Java installed in pc (higher than 8)<br>
 Gradle (wrapper is also in the project)
 
 
 ### Building
 
-For build execute -> gradle clean build<br>
+For build just execute in command line or terminal.
+```
+gradle clean build
+```
 You can also use the jar file in the builded jar package.
 
 ## Running the tests
-
-Then execute -> java -jar (path to jar file).
-all instructions are availble while runnig the application.
+```
+java -jar <path to jar file>
+```
+All instructions are availble while runnig the application.
 
 ## Built With
 
