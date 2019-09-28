@@ -31,18 +31,21 @@ public class PrintService {
     public void printAllValuesInList(Set<String> stringList) {
         stringList.forEach((str) -> System.out.println(str));
     }
-    public void initialPrint(){
+
+    public void initialPrint() {
         System.out.println("Select search options: ");
         System.out.println(" * Press 1 to search: ");
         System.out.println(" * press 2 to view a list of searchable fields: ");
         System.out.println(" * Type 'quite' to exit: ");
     }
-    public void endPrinting(){
+
+    public void endPrinting() {
         System.out.println();
         System.out.println("________________________________________________");
         System.out.println();
         initialPrint();
     }
+
     public void printAllSearchJsons(List<Map<String, String>> jsonList) {
 
         jsonList.forEach(map -> {
@@ -57,7 +60,8 @@ public class PrintService {
                 }
                 System.out.print(utillService.getFieldFromHashMap(map, key));
             }
-
+            System.out.println();
+            System.out.println();
         });
     }
 

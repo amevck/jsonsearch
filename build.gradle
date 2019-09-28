@@ -12,10 +12,6 @@ repositories {
 	mavenCentral()
 }
 
-jar{
-	baseName = 'json-search'
-	version = 'version'
-}
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
