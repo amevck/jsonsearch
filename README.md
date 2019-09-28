@@ -1,5 +1,6 @@
 # SpringBoot json search
 
 Tested with java 11<br>
-for build execute -> gradle clean build<br>
-then execute -> java -jar (path to jar file)
+For build execute -> gradle clean build<br>
+Then execute -> java -jar (path to jar file)<br>
+You can also use the jar file in the builded jar package
