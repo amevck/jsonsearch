@@ -27,5 +27,5 @@ all instructions are availble while runnig the application.
 
 * [SpringBoot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/) - The web framework used
 * [Gradle](https://docs.gradle.org/current/userguide/userguide.h) - Dependency Management
-* [git](https://git-scm.com/doc) - version controlling
+* [Git](https://git-scm.com/doc) - version controlling
 
